@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/pp1.jpg">
+    <title>footer vertical propesional - by JiwanDev</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            dark: '#0f172a',
+                            accent: '#3b82f6',
+                            purple: '#8b5cf6',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-gray-50 flex flex-col min-h-screen font-sans text-gray-800 justify-end">
+
+    <!-- Professional Footer -->
+    <footer class="bg-slate-900 text-slate-300 relative overflow-hidden w-full">
+        <!-- Decorative Top Border/Gradient -->
+        <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500"></div>
+
+        <!-- Newsletter Section -->
+        <div class="border-b border-slate-800">
+            <div class="container mx-auto px-6 py-12">
+                <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+                    <div class="text-center md:text-left">
+                        <h3 class="text-2xl font-bold text-white mb-2">Berlangganan Newsletter</h3>
+                        <p class="text-slate-400">Dapatkan update terbaru dan penawaran eksklusif langsung ke inbox Anda.</p>
+                    </div>
+                    <form id="newsletter-form" class="w-full md:w-auto flex flex-col sm:flex-row gap-3">
+                        <input type="email" placeholder="Masukkan email Anda" required
+                            class="px-4 py-3 rounded-lg bg-slate-800 border border-slate-700 text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent w-full sm:w-80 transition-all">
+                        <button type="submit"
+                            class="px-6 py-3 bg-blue-600 hover:bg-blue-500 text-white font-semibold rounded-lg transition-all transform hover:scale-105 shadow-lg shadow-blue-600/20">
+                            Subscribe
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Footer Content -->
+        <div class="container mx-auto px-6 py-16">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12">
+                
+                <!-- 1. Tentang Perusahaan -->
+                <div class="lg:col-span-1">
+                    <div class="flex items-center gap-3 mb-6">
+                        <img src="./assets/company-logo.png" alt="Logo" class="h-10 w-auto brightness-0 invert">
+                        <span class="text-xl font-bold text-white tracking-tight">TechBrand</span>
+                    </div>
+                    <p class="text-slate-400 leading-relaxed mb-6">
+                        Kami menciptakan solusi digital inovatif untuk membantu bisnis Anda tumbuh di era modern. Fokus pada kualitas, kecepatan, dan desain.
+                    </p>
+                    <!-- Small Social Icons for Mobile/Tablet quick access -->
+                    <div class="flex gap-4 lg:hidden">
+                        <a href="#" class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-blue-600 hover:text-white transition-all duration-300"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-blue-600 hover:text-white transition-all duration-300"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <!-- 2. Produk -->
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-6 relative inline-block group cursor-pointer footer-heading" data-target="products-list">
+                        Produk
+                        <span class="absolute -bottom-2 left-0 w-10 h-0.5 bg-blue-500 transition-all group-hover:w-full"></span>
+                        <i class="fas fa-chevron-down ml-2 text-sm md:hidden transition-transform"></i>
+                    </h4>
+                    <ul id="products-list" class="space-y-3 hidden md:block">
+                        <li><a href="#" class="hover:text-blue-400 transition-colors flex items-center gap-2 group"><i class="fas fa-angle-right text-xs text-blue-500 opacity-0 group-hover:opacity-100 transition-opacity -ml-4 group-hover:ml-0"></i> SaaS Platform</a></li>
+                        <li><a href="#" class="hover:text-blue-400 transition-colors flex items-center gap-2 group"><i class="fas fa-angle-right text-xs text-blue-500 opacity-0 group-hover:opacity-100 transition-opacity -ml-4 group-hover:ml-0"></i> Mobile Apps</a></li>
+                        <li><a href="#" class="hover:text-blue-400 transition-colors flex items-center gap-2 group"><i class="fas fa-angle-right text-xs text-blue-500 opacity-0 group-hover:opacity-100 transition-opacity -ml-4 group-hover:ml-0"></i> Enterprise Suite</a></li>
+                        <li><a href="#" class="hover:text-blue-400 transition-colors flex items-center gap-2 group"><i class="fas fa-angle-right text-xs text-blue-500 opacity-0 group-hover:opacity-100 transition-opacity -ml-4 group-hover:ml-0"></i> Developer API</a></li>
+                    </ul>
+                </div>
+
+                <!-- 3. Layanan -->
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-6 relative inline-block group cursor-pointer footer-heading" data-target="services-list">
+                        Layanan
+                        <span class="absolute -bottom-2 left-0 w-10 h-0.5 bg-purple-500 transition-all group-hover:w-full"></span>
+                        <i class="fas fa-chevron-down ml-2 text-sm md:hidden transition-transform"></i>
+                    </h4>
+                    <ul id="services-list" class="space-y-3 hidden md:block">
+                        <li><a href="#" class="hover:text-purple-400 transition-colors flex items-center gap-2 group"><i class="fas fa-angle-right text-xs text-purple-500 opacity-0 group-hover:opacity-100 transition-opacity -ml-4 group-hover:ml-0"></i> Web Development</a></li>
+                        <li><a href="#" class="hover:text-purple-400 transition-colors flex items-center gap-2 group"><i class="fas fa-angle-right text-xs text-purple-500 opacity-0 group-hover:opacity-100 transition-opacity -ml-4 group-hover:ml-0"></i> UI/UX Design</a></li>
+                        <li><a href="#" class="hover:text-purple-400 transition-colors flex items-center gap-2 group"><i class="fas fa-angle-right text-xs text-purple-500 opacity-0 group-hover:opacity-100 transition-opacity -ml-4 group-hover:ml-0"></i> Cloud Solutions</a></li>
+                        <li><a href="#" class="hover:text-purple-400 transition-colors flex items-center gap-2 group"><i class="fas fa-angle-right text-xs text-purple-500 opacity-0 group-hover:opacity-100 transition-opacity -ml-4 group-hover:ml-0"></i> Konsultasi IT</a></li>
+                    </ul>
+                </div>
+
+                <!-- 4. Hubungi Kami -->
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-6 relative inline-block">
+                        Hubungi Kami
+                        <span class="absolute -bottom-2 left-0 w-10 h-0.5 bg-pink-500"></span>
+                    </h4>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-map-marker-alt mt-1.5 text-pink-500"></i>
+                            <span class="text-slate-400 hover:text-white transition-colors">Jl. Sudirman No. 123,<br>Jakarta Selatan, 12190</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fas fa-phone-alt text-pink-500"></i>
+                            <a href="tel:+622112345678" class="text-slate-400 hover:text-white transition-colors">+62 21 1234 5678</a>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fas fa-envelope text-pink-500"></i>
+                            <a href="/cdn-cgi/l/email-protection#d8b1b6beb798acbdbbb0baaab9b6bcf6bbb7b5" class="text-slate-400 hover:text-white transition-colors"><span class="__cf_email__" data-cfemail="81e8efe7eec1f5e4e2e9e3f3e0efe5afe2eeec">[email&#160;protected]</span></a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- 5. Sosial Media (Vertical/Grid Layout) -->
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-6 relative inline-block">
+                        Sosial Media
+                        <span class="absolute -bottom-2 left-0 w-10 h-0.5 bg-blue-400"></span>
+                    </h4>
+                    <div class="grid grid-cols-4 gap-3">
+                        <!-- Facebook -->
+                        <a href="#" class="w-10 h-10 rounded-lg bg-slate-800 flex items-center justify-center group hover:bg-[#1877F2] transition-all duration-300 transform hover:-translate-y-1">
+                            <i class="fab fa-facebook-f text-slate-400 group-hover:text-white text-lg"></i>
+                        </a>
+                        <!-- Twitter/X -->
+                        <a href="#" class="w-10 h-10 rounded-lg bg-slate-800 flex items-center justify-center group hover:bg-black hover:border hover:border-slate-700 transition-all duration-300 transform hover:-translate-y-1">
+                            <i class="fab fa-twitter text-slate-400 group-hover:text-white text-lg"></i>
+                        </a>
+                        <!-- Instagram -->
+                        <a href="#" class="w-10 h-10 rounded-lg bg-slate-800 flex items-center justify-center group hover:bg-gradient-to-tr hover:from-yellow-400 hover:via-red-500 hover:to-purple-500 transition-all duration-300 transform hover:-translate-y-1">
+                            <i class="fab fa-instagram text-slate-400 group-hover:text-white text-lg"></i>
+                        </a>
+                        <!-- LinkedIn -->
+                        <a href="#" class="w-10 h-10 rounded-lg bg-slate-800 flex items-center justify-center group hover:bg-[#0A66C2] transition-all duration-300 transform hover:-translate-y-1">
+                            <i class="fab fa-linkedin-in text-slate-400 group-hover:text-white text-lg"></i>
+                        </a>
+                        <!-- Youtube -->
+                        <a href="#" class="w-10 h-10 rounded-lg bg-slate-800 flex items-center justify-center group hover:bg-[#FF0000] transition-all duration-300 transform hover:-translate-y-1">
+                            <i class="fab fa-youtube text-slate-400 group-hover:text-white text-lg"></i>
+                        </a>
+                        <!-- Github -->
+                        <a href="#" class="w-10 h-10 rounded-lg bg-slate-800 flex items-center justify-center group hover:bg-gray-700 transition-all duration-300 transform hover:-translate-y-1">
+                            <i class="fab fa-github text-slate-400 group-hover:text-white text-lg"></i>
+                        </a>
+                    </div>
+                    <div class="mt-6 p-4 bg-slate-800/50 rounded-lg border border-slate-700/50">
+                        <p class="text-xs text-slate-400 mb-2">Butuh bantuan cepat?</p>
+                        <a href="#" class="text-sm text-blue-400 hover:text-blue-300 font-medium flex items-center gap-1">
+                            Chat Support <i class="fas fa-arrow-right text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="bg-slate-950 py-6 border-t border-slate-800">
+            <div class="container mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
+                <p class="text-slate-500 text-sm text-center md:text-left">
+                    &copy; <span id="current-year"></span> TechBrand Inc. All rights reserved. By JiwanDev.
+                </p>
+                <div class="flex gap-6 text-sm text-slate-500">
+                    <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+                    <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+                    <a href="#" class="hover:text-white transition-colors">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="watermark">by JiwanDev</div>
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="./script.js"></script>
+</body>
+
+</html>

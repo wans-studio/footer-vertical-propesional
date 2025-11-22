@@ -1,0 +1,59 @@
+/* Custom Scrollbar for Webkit */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0f172a;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #334155;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #475569;
+}
+
+/* Smooth transitions for all interactive elements if not covered by Tailwind */
+a, button, input {
+    transition-property: color, background-color, border-color, transform, box-shadow, opacity;
+    transition-duration: 200ms;
+    transition-timing-function: ease-in-out;
+}
+
+/* Mobile Accordion Animation */
+.accordion-content {
+    transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+}
+
+.accordion-content.active {
+    max-height: 500px; /* Arbitrary large height */
+    opacity: 1;
+}
+
+/* Rotate chevron on mobile */
+.rotate-180 {
+    transform: rotate(180deg);
+}
+
+/* Ensure footer links are clickable and visible */
+footer a {
+    position: relative;
+    z-index: 10;
+}
+
+.watermark {
+    position: fixed;  
+    color: white;   
+    top: 39%;             
+    left: 50%;            
+    transform: translate(-50%, -50%);
+    opacity: 0.15;        
+    pointer-events: none;
+    z-index: 9999;        
+}
